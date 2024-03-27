@@ -1,0 +1,133 @@
+
+
+
+.contact-massage {
+  text-align: center;
+  padding: 80px 160px;
+  
+
+}
+.contact-container-img {
+  background-image: url(./img/woman.png);
+  background-size: cover;
+  height: calc(100vh - 264px);
+
+}
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 160px;
+}
+
+form {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #EFEFEF;
+  padding: 16px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.name {
+  display: flex;
+}
+
+form input,
+form textarea {
+  padding: 8px;
+  border-radius: 8px;
+  border: 0;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+form label {
+  padding: 8px;
+}
+
+form textarea {
+  resize: none;
+  height: 250px;
+  width: 374px;
+}
+
+.contact-section-two {
+  width: 500px;
+  background-color: #008000;
+  color: white;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.social-media img {
+  width: 66px;
+}
+
+@media (max-width:850px) {
+  .contact-container {
+    padding: 16px;
+    align-items: center;
+  }
+}
+
+@media (max-width:560px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  .contact-container {
+    padding: 16px;
+  }
+  form {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EFEFEF;
+    padding: 16px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+
+  form input,
+  form textarea {
+    padding: 8px;
+    border-radius: 8px;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+  .name {
+    flex-direction: column;
+  }
+
+  form textarea {
+    resize: none;
+    height: 250px;
+    width: 250px;
+  }
+
+  .contact-section-two {
+    width: 280px;
+    background-color: #008000;
+    color: white;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+
+  .social-media img {
+    width: 32px;
+  }
+}

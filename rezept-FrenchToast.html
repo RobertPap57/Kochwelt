@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="./img/favicon_io/favicon-32x32.png" />
+  <title>French Toast</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="font-style.css">
+  <link rel="stylesheet" href="header-style.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="rezept.css">
+  <script src="script.js"></script>
+  <script src="burger-menu.js"></script>
+  <script src="frenchtoast.js"></script>
+
+</head>
+
+
+
+
+<body onload="loadContent()">
+
+  <div id="headerContainer"></div>
+  <div class="max-width">
+  <div class="mainContainer">
+    <div class="rezept-aot">
+      <h2>French Toast</h2>
+      <img class="rezept-img" src="./img/FrenchToast.jpg" alt="French Toast">
+
+      <div class="mini-buttonsContainer">
+        <div class="mini-buttons">
+          <img src="./img/icons/clock-regular.svg">
+          <span>10 Min.</span>
+        </div>
+        <div class="mini-buttons">
+          <img src="./img/icons/brain-solid.svg">
+          <span>simpel</span>
+        </div>
+        <div class="mini-buttons">
+          <img src="./img/icons/calendar-alt-regular.svg">
+          <span>28.09.2020</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="portion-inputContainer">
+      <p>Zutaten für</p> <input id="portion-input" type="number" value="1" min="1" max="10"><button onclick="calculatePortion()">
+        Portionen</button>
+    </div>
+
+    <table>
+      <tr>
+        <td id="1">2 Eier</td>
+      </tr>
+      <tr>
+        <td id="2">50 ml Milch</td>
+      </tr>
+      <tr>
+        <td id="3">3 Scheiben Toastbrot</td>
+      </tr>
+      <tr>
+        <td id="4">1 Prise Salz</td>
+      </tr>
+      <tr>
+        <td id="5">1 TL Vanilleextrakt (optional)</td>
+      </tr>
+      <tr>
+        <td id="6">0,5 TL Zimt (optional)</td>
+      </tr>
+      <tr>
+        <td>Butter oder Öl zum Braten</td>
+      </tr>
+      <tr>
+        <td>Ahornsirup, Früchte oder Puderzucker zum Servieren</td>
+      </tr>
+
+    </table>
+
+    <div>
+      <h3>Zubereitung</h3>
+      <div>
+        <div class="mini-buttonsContainer">
+          <div class="mini-buttons">
+            <img src="./img/icons/clock-regular.svg">
+            <span>ca. 5 Min.</span>
+          </div>
+
+          <div class="mini-buttons">
+            <img src="./img/icons/clock-regular.svg">
+            <span>Gesamtzeit ca. 10 Min.</span>
+          </div>
+        </div>
+        <p>1. In einer flachen Schüssel oder einem flachen Teller die Eier aufschlagen und gut verquirlen..<br>
+          <br>2. Milch, Vanilleextrakt, Zimt und eine Prise Salz hinzufügen und alles gut vermischen.<br>
+          <br>3. Die Scheiben Brot in die Eiermischung legen und etwa 30 Sekunden pro Seite einweichen lassen. Achte
+          darauf, dass das Brot nicht zu lange in der Mischung liegt, da es sonst zu weich werden kann.<br>
+          <br>4. Eine Pfanne auf mittlere Hitze vorheizen und etwas Butter oder Öl darin schmelzen lassen. <br>
+          <br>5. Die eingeweichten Brotscheiben in die Pfanne legen und etwa 2-3 Minuten pro Seite goldbraun braten, bis
+          sie knusprig sind. <br>
+          <br>6. Die French Toasts aus der Pfanne nehmen und auf einem Teller anrichten.<br>
+          <br>7. Mit Ahornsirup, frischen Früchten oder Puderzucker servieren und genießen!
+        </p>
+      </div>
+
+      <div>
+        <h4>Rezept erstellt von</h4>
+
+        <div class="profileContainer">
+          <img src="./profil-bilder/Robert.jpg" alt="Schöne Bild">
+          <p>Robert</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div id="footerContainer"></div>
+
+</body>
+
+</html>

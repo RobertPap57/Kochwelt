@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./img/favicon_io/favicon-32x32.png" />
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font-style.css">
+    <link rel="stylesheet" href="header-style.css">
+    <link rel="stylesheet" href="impressum.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="kontakt.css">
+    <script src="script.js"></script>
+    <script src="kontakt.js"></script>
+    <script src="burger-menu.js"></script>
+  
+  </head>
+
+  <body onload="loadContent()">
+
+    <div id="page-container">
+      <div id="content-wrap">
+
+    <div id="headerContainer"></div>
+
+    <div class="contact-container-img">
+      <div class="max-width">
+  <div class="contact-container">
+
+    <form onsubmit="sendMail(event)">
+      <h1>KONTAKTIERE UNS!</h1>
+      <div class="name">
+        <label for="firstname">
+          <input id="firstname" type="text" placeholder="Vorname" required>
+        </label>
+
+        <label for="secondname">
+          <input id="secondname" type="text" placeholder="Nachname" required>
+        </label>
+      </div>
+
+      <div class="name">
+        <label for="email">
+          <input id="email" type="email" placeholder="EMAIL" required>
+        </label>
+
+        <label for="phone">
+          <input id="phone" type="tel" name="phone" placeholder="Telefon" required>
+        </label>
+      </div>
+      
+      <label for="massage">
+      <textarea id="massage" name="message" placeholder="Deine Nachricht" required></textarea>
+      </label>
+
+      <label for="submit">
+      <button class="button" id="submit" type="submit">Nachricht senden</button> 
+      </label>
+
+    </form>
+    <div class="contact-section-two">
+      <h2>Schreib uns gerne eine Nachricht!</h2>
+      <h3>Wir freuen uns auf deine Ideen und Rezepte</h3>
+      <p>Besuch uns gerne auf Social Media <br>um weitere tolle Rezepte zu entdecken!</p>
+
+      <div class="social-media">
+        <img src="./PNG/facebook_logo.png" alt="">
+        <img src="./PNG/instagrram_logo.png" alt="">
+      </div>
+    </div>
+    </div>
+    
+  </div>
+  </div>
+  </div>
+  
+  <div id="footerContainer"></div>
+</div>
+
+</body>
+
+</html>
+

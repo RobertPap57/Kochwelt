@@ -1,0 +1,168 @@
+header {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 160px;
+    height: 100px;
+    
+}
+
+header img {
+    height: 80px;
+}
+
+.header-links {
+    align-self: flex-end;
+    padding-bottom: 12px;
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    padding-left: 16px;
+}
+
+.links:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 12px;
+    color: green;
+}
+
+
+.burgermenu {
+    display: none;
+}
+.hide {
+    display: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1100px) {
+    .hide {
+        display: block;
+        
+    }
+    .header-links {
+        display: none;
+    }
+
+    #menulinks {
+        display: none;
+    }
+
+    .burgermenu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .bar {
+        width: 30px;
+        height: 3px;
+        background-color: green;
+        margin: 6px 0;
+        transition: 125ms;
+    }
+
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+        transform: rotate(-45deg) translate(-6px, 6px);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-5px, -6px);
+        transform: rotate(45deg) translate(-6px, -6px);
+    }
+
+  
+
+    #menulinks {
+        
+        flex-direction: column;
+        box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        right: 166px;
+        top: 75px;
+        border-radius: 10px;
+    }
+
+    #menulinks a {
+        width: 100%;
+        padding: 14px;
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+    }
+
+    #menulinks a:hover {
+        text-decoration: none;
+        color: green;
+    }
+
+}
+
+@media (max-width:880px) {
+    .header {
+        padding-inline: 80px;
+    }
+
+    
+    #menulinks {
+        right: 86px;
+    }
+
+}
+
+@media (max-width:550px) {
+    .header {
+        padding-inline: 40px;
+    }
+
+    #menulinks {
+        right: 46px;
+    }
+
+    #menulinks a {
+        padding: 8px;
+    }
+}
+
+
+@media (max-width:470px) {
+    .header img {
+        height: 70px;
+    }
+
+    .header {
+        padding-inline: 20px;
+    }
+
+    #menulinks {
+        right: 26px;
+    }
+
+    .burgermenu {
+        padding-bottom: 2px;
+    }
+
+   
+}

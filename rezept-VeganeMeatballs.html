@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="./img/favicon_io/favicon-32x32.png" />
+  <title>Vegane Meatballs</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="font-style.css">
+  <link rel="stylesheet" href="header-style.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="rezept.css">
+  <script src="script.js"></script>
+  <script src="burger-menu.js"></script>
+  <script src="VeganeMeatballs.js"></script>
+
+</head>
+
+
+
+
+<body onload="loadContent()">
+
+  <div id="headerContainer"></div>
+  <div class="max-width">
+  <div class="mainContainer">
+    <div class="rezept-aot">
+      <h2>Vegane Meatballs</h2>
+      <img class="rezept-img" src="./img/Meatballs.jpg" alt="Vegane Meatballs">
+
+      <div class="mini-buttonsContainer">
+        <div class="mini-buttons">
+          <img src="./img/icons/clock-regular.svg">
+          <span>45 Min.</span>
+        </div>
+        <div class="mini-buttons">
+          <img src="./img/icons/brain-solid.svg">
+          <span>simpel</span>
+        </div>
+        <div class="mini-buttons">
+          <img src="./img/icons/calendar-alt-regular.svg">
+          <span>28.09.2020</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="portion-inputContainer">
+      <p>Zutaten für</p> <input id="portion-input" type="number" value="1" min="1" max="10"><button onclick="calculatePortion()">
+        Portionen</button>
+    </div>
+
+    <table>
+      <tr>
+        <td id="1">25 g trockene Linsen</td>
+      </tr>
+      <tr>
+        <td id="2">90 ml Wasser</td>
+      </tr>
+      <tr>
+        <td>Öl zum anbraten und betreichen</td>
+      </tr>
+      <tr>
+        <td id="4">1 Knoblauchzehe</td>
+      </tr>
+      <tr>
+        <td id="5">37.5 g Pilze grob gehackt</td>
+      </tr>
+      <tr>
+        <td id="6">0.5 TL Kreuzkümmel gemahlen</td>
+      </tr>
+      <tr>
+        <td id="7">17.5 g Haferflocken</td>
+      </tr>
+      <tr>
+        <td id="8">0.75 EL frische Petersilie gehackt</td>
+      </tr>
+      <tr>
+        <td id="9">0.5 EL Sojasoße</td>
+      </tr>
+      <tr>
+        <td>Salz und Pfeffer nach Belieben</td>
+      </tr>
+  
+    </table>
+
+    <div>
+      <h3>Zubereitung</h3>
+      <div>
+        <div class="mini-buttonsContainer">
+          <div class="mini-buttons">
+            <img src="./img/icons/clock-regular.svg">
+            <span>ca. 10 Min.</span>
+          </div>
+
+          <div class="mini-buttons">
+            <img src="./img/icons/clock-regular.svg">
+            <span>Gesamtzeit ca. 45 Min.</span>
+          </div>
+        </div>
+        <p>1. Die Linsen 20 Minuten in einem Topf gemäß der Packungsanleitung garkochen. <br><br>2. Das Öl in einer Pfanne
+          erhitzen und die Zwiebel ca. 3 Minuten glasig anbraten. Den Knoblauch hinzufügen und für eine weitere Minute
+          anrösten. Dann die gehackten Pilze und den Kreuzkümmel hinzufügen und etwa 3 weitere Minuten anbraten oder bis die
+          Pilze weich sind. <br><br> 3. Die Haferflocken in einen Mixer oder eine Küchenmaschine geben und zu Mehl mixen.
+          Dann die gekochten Linsen, gebratene Zwiebeln, Knoblauch, Pilze, Petersilie, Sojasauce, Salz und Pfeffer
+          hinzufügen. Pulsieren, bis alles gut vermischt und grob gehackt, aber nicht püriert ist. Abschmecken und bei
+          Bedarf mehr Salz und Pfeffer zugeben. Dann die Mischung für 10 Minuten beiseitestellen (oder über Nacht in den
+          Kühlschrank stellen, wenn die Bällchen erst am nächsten Tag zubereitet werden sollen). <br><br> 4. Den Ofen auf
+          175°C vorheizen und ein Backblech mit Backpapier auslegen. <br><br>5. Die Linsen-Mischung mit feuchten Händen zu
+          Bällchen formen und auf das vorbereitete Backblech legen. Dann die Bällchen mit etwas Öl bepinseln oder besprühen
+          und 25-30 Minuten backen, dabei nach der Hälfte der Zeit wenden. <br> <br> 6. Mit einer Soße deiner Wahl servieren
+          und schmecken lassen!
+        </p>
+      </div>
+
+      <div>
+        <h4>Rezept erstellt von</h4>
+
+        <div class="profileContainer">
+          <img src="./profil-bilder/wladimir-lange.1024x1024.jpg" alt="Schöne Bild">
+          <p>Wladimir</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div id="footerContainer"></div>
+
+</body>
+
+</html>
